@@ -22,6 +22,10 @@
   },
   "include": [
     "src"
+<<<<<<< HEAD
   ],
   "extends": "./paths.json"
+=======
+  ]
+>>>>>>> 1eb5fb78c8dd83a69c7724ce78abbf177eddc1e8
 }

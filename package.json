@@ -14,7 +14,10 @@
     "@types/react-dom": "^16.9.8",
     "antd": "^4.9.1",
     "babel-plugin-import": "^1.13.3",
+<<<<<<< HEAD
     "craco-alias": "^2.1.1",
+=======
+>>>>>>> 1eb5fb78c8dd83a69c7724ce78abbf177eddc1e8
     "craco-less": "^1.17.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -45,5 +48,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }

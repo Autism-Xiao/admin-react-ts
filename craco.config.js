@@ -26,6 +26,7 @@ module.exports = {
   ],
   babel: {
     plugins: [
+<<<<<<< HEAD
       ['import', {
         libraryName: 'antd',
         libraryDirectory: 'es',
@@ -36,4 +37,10 @@ module.exports = {
       }]
     ]
   },
+=======
+        ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }],
+        ['@babel/plugin-proposal-decorators', { legacy: true }]
+    ]
+},
+>>>>>>> 1eb5fb78c8dd83a69c7724ce78abbf177eddc1e8
 };
