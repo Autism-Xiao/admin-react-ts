@@ -1,17 +1,39 @@
 const CracoLessPlugin = require('craco-less');
+const CracoAlias = require("craco-alias");
 
 module.exports = {
-  plugins: [
-    {
+  plugins: [{
       plugin: CracoLessPlugin,
       options: {
         lessLoaderOptions: {
           lessOptions: {
-            modifyVars: { '@primary-color': '#1DA57A' },
+            modifyVars: {
+              '@primary-color': '#1DA57A'
+            },
             javascriptEnabled: true,
           },
         },
       },
     },
+    {
+      plugin: CracoAlias,
+      options: {
+        source: "tsconfig",
+        baseUrl: "./src",
+        tsConfigPath: "./paths.json",
+      }
+    }
   ],
+  babel: {
+    plugins: [
+      ['import', {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true
+      }],
+      ['@babel/plugin-proposal-decorators', {
+        legacy: true
+      }]
+    ]
+  },
 };
